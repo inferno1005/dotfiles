@@ -18,6 +18,7 @@ set laststatus=2 "always display status line in
 set lazyredraw "dont' update display during execution of macros
 set scrolljump=5
 match Todo /\s\+$/
+set scrolloff
 
 
 call pathogen#runtime_append_all_bundles()
@@ -26,21 +27,21 @@ call pathogen#runtime_append_all_bundles()
 
 
 "work with whitespace
-set expandtab " turn tabs into spaces
-set tabstop=4 " four spaces for tabs
-set shiftwidth=4 " four spaces for indentation
-set listchars=tab:>.,eol:\$ " change the way tab and eol are displayed
+    set expandtab " turn tabs into spaces
+    set tabstop=4 " four spaces for tabs
+    set shiftwidth=4 " four spaces for indentation
+    set listchars=tab:>.,eol:\$ " change the way tab and eol are displayed
 
 """"""""""""""""""""""""""""""""""""""""
 "======== TRIAL STUFF ==================
 """"""""""""""""""""""""""""""""""""""""
-set nocp
-filetype plugin on
+    set nocp
+    filetype plugin on
 """"""""""""""""""""""""
 " Setting split window "
 """"""""""""""""""""""""
-set splitright
-set splitbelow
+    set splitright
+    set splitbelow
 
 """""""""""""""""""""""
 "     Setup GUI       "
